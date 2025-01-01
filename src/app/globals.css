@@ -360,6 +360,9 @@ footer .socail_media img{
   .news_card_img_top img{
     height: 215px;
   }
+  .news_card_img_left img{
+    height: 215px;
+  }
   .news_grid{
     padding: .75rem;
   }
