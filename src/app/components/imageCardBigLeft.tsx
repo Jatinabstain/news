@@ -20,7 +20,7 @@ export default function NewsCardBigLeft({ newsCardBigLeftItems }: NewsCardBigLef
         <>
             {newsCardBigLeftItems.map((item) => (
                 <div key={item.id} className="news_card mb-4">
-                    <div className='flex gap-4 items-center'>
+                    <div className='flex md:flex-row flex-col gap-4 items-center'>
                         <div className="news_card_img_left">
                             <Link href={item.href}>
                                 <Image src={item.img} alt="Logo" />

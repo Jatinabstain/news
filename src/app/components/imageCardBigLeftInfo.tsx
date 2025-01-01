@@ -21,7 +21,7 @@ export default function NewsCardBigLeftInfo({ newsCardBigLeftInfoItems }: NewsCa
         <>
             {newsCardBigLeftInfoItems.map((item) => (
                 <div key={item.id} className="news_card news_card_info mb-4">
-                    <div className='flex gap-4 items-center'>
+                    <div className='flex md:flex-row flex-col gap-4 items-center'>
                         <div className="news_card_img_left">
                             <Link href={item.href}>
                                 <Image src={item.img} alt="Logo" />

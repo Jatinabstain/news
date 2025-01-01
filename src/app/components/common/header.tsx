@@ -27,9 +27,8 @@ export default function Header() {
             <TopBar />
             <header className="bg-white border-b border-gray-300 sticky top-0 z-10">
                 <nav className="mx-auto max-w-7xl flex items-center justify-between px-2 lg:px-4">
-                    <div className="flex lg:flex-1">
-                        <BrandLogo />
-                    </div>
+                    <BrandLogo />
+
                     <div className="flex lg:hidden items-center">
                         <div className="pe-6">
                             <Search />

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,7 +8,6 @@
   --textContent: #555555;
   --dark: #000000;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -30,7 +28,7 @@ body {
   object-fit: contain;
 }
 header{
-  padding: 15px 0;
+  padding: 15px 5px;
 }
 .logo{
   height: 50px;
@@ -75,6 +73,7 @@ header{
   padding: 30px 0;
 }
 .news_grid{
+  min-height: 100px;
   border-radius: 8px;
   padding: 1rem;
   position: relative;
@@ -166,7 +165,7 @@ header{
   margin-right: 5px;
 }
 .news_card_img_left img{
-  max-width: 230px;
+  min-width: 230px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
@@ -250,7 +249,7 @@ header{
   align-items: center !important;
 }
 .news_card_info .news_card_img_left img{
-  max-width: 300px;
+  min-width: 300px;
   height: 190px;
   object-fit: cover;
   border-radius: 8px;
@@ -355,7 +354,13 @@ footer .socail_media img{
   transition: all 0.3s ease;
 }
 @media  (max-width: 768px){
+  .news_grids .news_grid:first-child{
+    height: 190px;
+  }
   .news_card_img_top img{
-    height: 280px;
+    height: 215px;
+  }
+  .news_grid{
+    padding: .75rem;
   }
 }
