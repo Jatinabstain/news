@@ -1,0 +1,12 @@
+{
+    "header": {
+      "home": "घर",
+      "entertainment": "मनोरंजन",
+      "news": "समाचार",
+      "sports": "खेल",
+      "business": "व्यापार",
+      "travel": "यात्रा",
+      "world": "दुनिया",
+      "politics": "राजनीति"
+    }
+}

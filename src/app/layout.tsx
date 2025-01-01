@@ -1,3 +1,6 @@
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Import Inter font only
 import "./globals.css";
@@ -14,15 +17,21 @@ export const metadata: Metadata = {
   description: "News app",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${inter.variable} antialiased`}>
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

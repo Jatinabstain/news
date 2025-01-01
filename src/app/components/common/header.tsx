@@ -10,14 +10,14 @@ import BrandLogo from './brandLogo';
 import Search from './search';
 
 const menus: MenuItem[] = [
-    { name: 'Home', href: '/' },
-    { name: 'Entertainment', href: '#' },
-    { name: 'News', href: '#' },
-    { name: 'Sports', href: '#' },
-    { name: 'Business', href: '#' },
-    { name: 'Travel', href: '#' },
-    { name: 'World', href: '#' },
-    { name: 'Politics', href: '#' }
+    { name: 'home', href: '/' },
+    { name: 'entertainment', href: '#' },
+    { name: 'news', href: '#' },
+    { name: 'sports', href: '#' },
+    { name: 'business', href: '#' },
+    { name: 'travel', href: '#' },
+    { name: 'world', href: '#' },
+    { name: 'politics', href: '#' }
 ]
 
 export default function Header() {
@@ -27,6 +27,7 @@ export default function Header() {
             <TopBar />
             <header className="bg-white border-b border-gray-300 sticky top-0 z-10">
                 <nav className="mx-auto max-w-7xl flex items-center justify-between px-2 lg:px-4">
+
                     <BrandLogo />
 
                     <div className="flex lg:hidden items-center">

@@ -1,0 +1,12 @@
+{
+    "header": {
+      "home": "Home",
+      "entertainment": "Entertainment",
+      "news": "News",
+      "sports": "Sports",
+      "business": "Business",
+      "travel": "Travel",
+      "world": "World",
+      "politics": "Politics"
+    }
+}

@@ -1,5 +1,6 @@
 'use client'
 
+import {useTranslations} from 'next-intl';
 import { usePathname } from 'next/navigation';
 import React from "react";
 import Link from "next/link";
@@ -15,6 +16,8 @@ export default function MainMenu({ menus }: MainMenuProps) {
     if (!menus || menus.length === 0) {
         return <p>No menu items available.</p>;
     }
+    
+    const t = useTranslations('header');
 
     return (
         <>
@@ -25,8 +28,9 @@ export default function MainMenu({ menus }: MainMenuProps) {
                         href={item.href}
                         className={`nav_link ${pathname === item.href ? 'active' : ''}`}
                     >
-                        {item.name}
+                        {t(item.name)}
                     </Link>
+                    
                 ))}
             </PopoverGroup>
 
@@ -37,7 +41,8 @@ export default function MainMenu({ menus }: MainMenuProps) {
                     href={item.href}
                     className={`-mx-3 mobile_link block rounded-lg px-3 py-2 hover:bg-gray-50 ${pathname === item.href ? 'active' : ''}`}
                 >
-                    {item.name}
+                    {t(item.name)}
+                    {/* {item.name} */}
                 </Link>
             ))}
         </div>
