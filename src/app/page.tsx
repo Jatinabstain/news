@@ -51,6 +51,7 @@ import NewsCardBigLeftInfo from "./components/imageCardBigLeftInfo";
 import { CategoryCardTopItem } from "@/types/categoryCardTop";
 import CategoryCard from "./components/categoryCard";
 import Footer from "./components/common/footer";
+import TopPicks from "./components/topPicks";
 
 const newsCardTopItems: NewsCardTopItem[] = [
   { id: '1', img: newsImg, tag: 'Uttar Pradesh', content: 'CM Yogi increases Jewar Airport land compensation by Rs 1,200 per sqm, farmers welcome decision', href: '#' },
@@ -224,6 +225,9 @@ export default function Home() {
                 <Image src={tagIcon} alt="tag" objectFit="contain" />
                 <h2>Top Picks</h2>
               </div>
+
+              <TopPicks />
+              
               <Image
                 src={ads1}
                 alt="ads"
@@ -238,6 +242,7 @@ export default function Home() {
               className="img-fluid mt-4"
             />
           </div>
+          
         </div>
       </section>
 
