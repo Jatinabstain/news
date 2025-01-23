@@ -12,11 +12,12 @@ type MainMenuProps = {
 };
 export default function MainMenu({ menus }: MainMenuProps) {
     const pathname = usePathname(); // Call usePathname at the top
-    const t = useTranslations('header'); // Call useTranslations unconditionally
 
     if (!menus || menus.length === 0) {
         return <p>No menu items available.</p>;
     }
+    
+    const t = useTranslations('header');
 
     return (
         <>

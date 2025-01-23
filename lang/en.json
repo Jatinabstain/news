@@ -1,4 +1,11 @@
 {
+    "Manifest": {
+      "name": "News App"
+    },
+    "LocaleLayout": {
+      "title": "News App",
+      "description": "News App is a news website that provides the latest news from India and around the world. Get breaking news alerts, live news, and top stories from India and around the world."
+    },
     "header": {
       "home": "Home",
       "entertainment": "Entertainment",
@@ -8,5 +15,47 @@
       "travel": "Travel",
       "world": "World",
       "politics": "Politics"
-    }
+    },
+    "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, pb {🇮🇳 Punjabi} en {🇺🇸 English} other {🇷🇺 Hindi}}"
+  },
+    "Date": {
+    "December": "December",
+    "Saturday": "Saturday"
+  },
+    "Footer": {
+      "Popular Categories": "Popular Categories",
+      "Live TV": "Live TV",
+      "World": "World",
+      "Photos": "Photos",
+      "Videos": "Videos",
+      "India": "India",
+      "Sports": "Sports",
+      "Bollywood": "Bollywood",
+      "Business": "Business",
+      "All rights reserved": "All rights reserved"
+  },
+  "IndexPage": {
+    "title": "News"
+  },
+  "NotFoundPage": {
+    "title": "NotFoundPage",
+    "description": "Not Found Page"
+  },
+  "PageLayout": {
+    "NotFoundPage": "NotFoundPage",
+    "PM Modi embarks on historic visit to Kuwait: First Indian Prime Minister tour in 43 years": "PM Modi embarks on historic visit to Kuwait: First Indian Prime Minister tour in 43 years",
+    "Madhya Pradesh: Four of a family die in fire at milk parlour-cum-residence in Dewas": "Madhya Pradesh: Four of a family die in fire at milk parlour-cum-residence in Dewas",
+    "Germany: 2 dead, 68 injured in suspected attack at Magdeburg Christmas market, Saudi man arrested": "Germany: 2 dead, 68 injured in suspected attack at Magdeburg Christmas market, Saudi man arrested",
+    "Jaipur tanker explosion: Death count rises to 14 as half of injured in critical condition": "Jaipur tanker explosion: Death count rises to 14 as half of injured in critical condition",
+    "Allu Arjun's Pushpa 2 enters Rs 1,000 cr club, earns THIS much on Day 16": "Allu Arjun's Pushpa 2 enters Rs 1,000 cr club, earns THIS much on Day 16",
+    "Uttar Pradesh": "Uttar Pradesh",
+    "CM Yogi increases Jewar Airport land compensation by Rs 1,200 per sqm, farmers welcome decision": "CM Yogi increases Jewar Airport land compensation by Rs 1,200 per sqm, farmers welcome decision",
+    "India": "India",
+    "Crime": "Crime",
+    "OPINION Parliament fight should not have gone to Police": "OPINION Parliament fight should not have gone to Police",
+    "MCD issues order to identify illegal Bangladeshi migrant children in Delhi schools": "MCD issues order to identify illegal Bangladeshi migrant children in Delhi schools",
+    "Delhi cab driver stabbed to death by passengers over paying Rs 400 taxi fair": "Delhi cab driver stabbed to death by passengers over paying Rs 400 taxi fair"
+  }
 }

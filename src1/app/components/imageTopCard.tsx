@@ -1,6 +1,5 @@
 'use client'
 
-import {useTranslations} from 'next-intl';
 import React from "react";
 import { NewsCardTopItem } from '@/types/newsCardTop';
 
@@ -12,7 +11,6 @@ type ImageTopCardProps = {
 };
 
 export default function ImageTopCard({ newsCardTopItems }: ImageTopCardProps) {
-    const t = useTranslations('PageLayout');
 
     if (!newsCardTopItems || newsCardTopItems.length === 0) {
         return <p>No menu items available.</p>;
@@ -29,10 +27,10 @@ export default function ImageTopCard({ newsCardTopItems }: ImageTopCardProps) {
                     </div>
                     <div className="news_card_top_content">
                         <Link href={item.href} className='w-fit block'>
-                            <small className='news_tag'>{t(item.tag)}</small>
+                            <small className='news_tag'>{item.tag}</small>
                         </Link>
                         <Link href={item.href}>
-                            <p>{t(item.content)}</p>
+                            <p>{item.content}</p>
                         </Link>
                     </div>
                 </div>

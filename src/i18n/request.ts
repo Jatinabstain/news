@@ -1,12 +1,24 @@
 import {getRequestConfig} from 'next-intl/server';
- 
-export default getRequestConfig(async () => {
-  // Provide a static locale, fetch a user setting,
-  // read from `cookies()`, `headers()`, etc.
-  const locale = 'en';
- 
+import {routing} from './routing';
+
+type Locale = typeof routing.locales[number];
+
+export default getRequestConfig(async ({requestLocale}) => {
+  // This typically corresponds to the `[locale]` segment
+  let locale = await requestLocale;
+
+  // Ensure that the incoming `locale` is valid
+  if (!locale || !routing.locales.includes(locale as Locale)) {
+    locale = routing.defaultLocale;
+  }
+
   return {
     locale,
-    messages: (await import(`../../lang/${locale}.json`)).default
+    messages: (
+      await (locale === 'en'
+        ? // When using Turbopack, this will enable HMR for `en`
+          import('../../lang/en.json')
+        : import(`../../lang/${locale}.json`))
+    ).default
   };
 });
