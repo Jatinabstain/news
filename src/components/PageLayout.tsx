@@ -216,7 +216,7 @@ export default function PageLayout({  }: Props) {
                 className="img-fluid mb-4"
               />
               <div className="icon_heading flex gap-x-1 items-center">
-                <Image src={tagIcon} alt="tag" objectFit="contain" />
+                <Image src={tagIcon} alt="tag" style={{objectFit: "contain"}} />
                 <h2>Don&apos;t Miss</h2>
               </div>
               <NewsCardBigLeftSmall newsCardBigLeftSmallItems={newsCardBigLeftSmallItems} />
@@ -226,7 +226,7 @@ export default function PageLayout({  }: Props) {
                 className="img-fluid mb-4"
               />
               <div className="icon_heading flex gap-x-1 items-center">
-                <Image src={tagIcon} alt="tag" objectFit="contain" />
+                <Image src={tagIcon} alt="tag" style={{objectFit: "contain"}} />
                 <h2>Top Picks</h2>
               </div>
 

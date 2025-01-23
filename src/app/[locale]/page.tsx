@@ -1,22 +1,15 @@
-import {useTranslations} from 'next-intl';
-import {setRequestLocale} from 'next-intl/server';
-import PageLayout from '@/components/PageLayout';
+import { setRequestLocale } from 'next-intl/server';
+import ClientPage from './ClientPage';
 
 type Props = {
-  params: {locale: string};
+  params: { locale: string };
 };
 
-export default function IndexPage({params: {locale}}: Props) {
+export default async function IndexPage({ params }: Props) {
+  const { locale } = params; // No need for `await`
+
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations('LocaleLayout');
-
-  return (
-    <PageLayout title={t('title')}>
-      <p className="max-w-[590px]">
-        {t('title')}
-      </p>
-    </PageLayout>
-  );
+  return <ClientPage locale={locale} />;
 }
